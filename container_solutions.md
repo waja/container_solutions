@@ -4,7 +4,7 @@ title: Container Solutions
 ---
 = data-x='-3000' data-y='-2000' data-scale='4' id='title'
 ## Container Solutions
-## <div style="font-size:small;i">From chroot to Rocket and Sandstorm.io</div>
+## <div style="font-size:small;">From chroot to Rocket and Sandstorm.io</div>
 ### Jan Wagner <waja@cyconet.org>
 
 <br>
@@ -109,7 +109,7 @@ title: Container Solutions
 
 * Using same environment for development and production
 * Isolate applications (eg. perl5 and perl6) on the same system
-*
+* Rapid deployment in large scale (in combination with Docker [Registry](https://docs.docker.com/registry/))
 
 ---
 = data-x='2400' data-y='2000' id='docker3'
@@ -124,10 +124,57 @@ title: Container Solutions
 <a href="https://asciinema.org/a/76zqng63200nt5f3esqnf7ag5" target="_blank"><img src="https://asciinema.org/a/76zqng63200nt5f3esqnf7ag5.png" height="500" alt="Starting nginx in Docker"/></a>
 
 ---
-= data-x='3600' data-y='2000' id='docker5'
+= data-x='4800' data-y='2000' id='docker5'
 ## [Dockerfiles](https://gist.github.com/waja/fd40b69ac7db07093661#file-dockerfile)
 
 <a href="https://asciinema.org/a/anwm2ve7vqc697adv553wr1rh" target="_blank"><img src="https://asciinema.org/a/anwm2ve7vqc697adv553wr1rh.png" height="500" alt="Building nginx container with Dockerfile"/></a>
+
+---
+= data-x='6000' data-y='2000' id='docker6'
+## Docker - user data?
+
+```
+&#36; telnet localhost 80
+Trying 127.0.0.1...
+Connected to localhost.
+Escape character is '^]'.
+GET / HTTP/1.1
+HOST: localhost
+[...]
+<title\>Welcome to nginx on Debian!</title\>
+[...]
+```
+
+---
+= data-x='7200' data-y='2000' id='docker7'
+## Docker - persistent data
+
+```
+&#36; mkdir -p /tmp/nginx/ && \
+  echo "Hello world" > /tmp/nginx/index.html && \
+  docker run -d -p 80:80 -v /tmp/nginx/:/var/www/html \
+  debian/nginx nginx
+&#36; telnet localhost 80
+Trying 127.0.0.1...
+Connected to localhost.
+Escape character is '^]'.
+GET / HTTP/1.1
+HOST: localhost
+
+HTTP/1.1 200 OK
+[...]
+Hello world
+```
+
+---
+= data-x='8400' data-y='2000' id='docker8'
+## Docker - [Layered Filesystems](https://en.wikipedia.org/wiki/UnionFS#Other_implementations)
+
+![](https://www.docker.com/sites/default/files/products/what_is_layered_filesystems_sm.png)
+
+* [Images](https://docs.docker.com/engine/userguide/dockerimages/) are series of stacked, read-only (FS) [layers](https://imagelayers.io/)
+* Every (FS) change result into adding a new layer
+* Top layer is a thin writable layer (makes the difference between [container and image](https://docs.docker.com/engine/userguide/storagedriver/imagesandcontainers/))
 
 ---
 = data-x='1000' data-y='4000' id='credits'
@@ -138,6 +185,7 @@ title: Container Solutions
 * [Virtualization diagram](https://www.docker.com/sites/default/files/what-is-docker-diagram.png)
 * [Docker diagram](https://www.docker.com/sites/default/files/what-is-vm-diagram.png)
 * [Docker architecture](https://docs.docker.com/engine/article-img/architecture.svg)
+* [Docker - Layered Filesystems Diagram] (https://www.docker.com/sites/default/files/products/what_is_layered_filesystems_sm.png)
 * [Understanding the key differences between LXC and Docker](https://www.flockport.com/lxc-vs-docker/)
 * [Operating System Containers vs. Application Containers](https://blog.risingstack.com/operating-system-containers-vs-application-containers/)
 
