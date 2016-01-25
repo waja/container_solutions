@@ -118,6 +118,18 @@ title: Container Solutions
 <img width="100%" src="https://docs.docker.com/engine/article-img/architecture.svg" alt="Docker architecture">
 
 ---
+= data-x='3600' data-y='2000' id='docker4'
+## Starting Docker
+
+<a href="https://asciinema.org/a/76zqng63200nt5f3esqnf7ag5" target="_blank"><img src="https://asciinema.org/a/76zqng63200nt5f3esqnf7ag5.png" height="500" alt="Starting nginx in Docker"/></a>
+
+---
+= data-x='3600' data-y='2000' id='docker5'
+## [Dockerfiles](https://gist.github.com/waja/fd40b69ac7db07093661#file-dockerfile)
+
+<a href="https://asciinema.org/a/anwm2ve7vqc697adv553wr1rh" target="_blank"><img src="https://asciinema.org/a/anwm2ve7vqc697adv553wr1rh.png" height="500" alt="Building nginx container with Dockerfile"/></a>
+
+---
 = data-x='1000' data-y='4000' id='credits'
 
 ## Credits
