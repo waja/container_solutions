@@ -177,6 +177,33 @@ Hello world
 * Top layer is a thin writable layer (makes the difference between [container and image](https://docs.docker.com/engine/userguide/storagedriver/imagesandcontainers/))
 
 ---
+= data-x='9600' data-y='2000' id='docker9'
+## Docker - Updating your OS (packages)
+
+* You can't use your distribution toolstack to update your software in Docker containers (or images)
+* If you use less or unmaintained images, you may [worry](http://www.banyanops.com/blog/analyzing-docker-hub/)
+* You need rebuild(ed) images from the bottom
+  * Need to care yourself
+  * Use well maintained (and thus updated) images, but depend on others
+
+---
+= data-x='10800' data-y='2000' id='docker10'
+## Docker - Automate image creation
+
+* You need to have you images creation scripts (Dockerfiles) published
+* You need to build environments (infrastuture) to create you images from Dockerfiles
+  * Might be catched up by CI (autobuild on commit and/or regularly)
+* You need to push the images into a Registry and deploy them (automatically)
+
+---
+= data-x='12000' data-y='2000' id='docker11'
+## Docker - Things are going to be very different in production
+
+* Completely different infrastructure and deployment methods needed
+* May raise [TCO](https://en.wikipedia.org/wiki/Total_cost_of_ownership) depending on the homogeny of your environments
+* The more reasonable usage of container can you made, the more is TCO reducing
+
+---
 = data-x='1000' data-y='4000' id='credits'
 
 ## Credits
