@@ -241,6 +241,13 @@ Hello world
 * [Drone](https://drone.io/) - CI platform built on Docker
 
 ---
+= data-x='18600' data-y='2000' id='docker14'
+## Docker - Video Tutorials
+
+* [Introduction into Docker](https://fast.wistia.net/embed/iframe/1ok76kleuw)
+* [Docker Fundamentals](https://fast.wistia.net/embed/iframe/u3w34ozv6x)
+
+---
 = data-x='1000' data-y='4000' id='credits'
 
 ## Credits
