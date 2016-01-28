@@ -92,6 +92,8 @@ title: Container Solutions
 = data-x='12400' data-y='-1000' id='dockervslxc3'
 ## Docker vs LXC
 
+Docker has compared to LXC
+
 * New behaviour in terms of network, storage and management
 * Developer friendly model with the Dockerfile and commits
 * No knowhow of OS needed <TODO>
