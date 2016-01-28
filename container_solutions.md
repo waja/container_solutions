@@ -64,7 +64,17 @@ title: Container Solutions
 * [Based](https://docs.docker.com/engine/introduction/understanding-docker/#the-underlying-technology) on [Linux Containers](#containers1)
 * [Uses](https://docs.docker.com/engine/introduction/understanding-docker/#union-file-systems) Union (layered) file systems
 * Result: [Container format](https://docs.docker.com/engine/introduction/understanding-docker/#container-format) - libcontainer, LXC (, maybe Jails and Zones)
-* Goal: [package an application](https://www.docker.com/what-docker)
+* Goal: package and deliver an [application](https://www.docker.com/what-docker)
+
+---
+= data-x='4800' data-y='1000' id='containers4'
+## [sandstorm.io](https://sandstorm.io/features)
+
+* Essentially [based](https://docs.sandstorm.io/en/latest/using/how-it-works/) on [Linux Containers](#containers1)
+* Result: Sandstorm package ([```.spk```-app](https://docs.sandstorm.io/en/latest/vagrant-spk/packaging-tutorial-meteor/#overview-of-sandstorm-packages))
+* Goal: package and deliver an [application](https://apps.sandstorm.io/)
+
+<img style="position: relative; left:200px;" height="350" src="https://sandstorm.io/images/how-it-works.png" alt="Grains: Fine-grained Object Containers">
 
 ---
 = data-x='10000' data-y='-1000' id='dockervslxc'
@@ -210,6 +220,7 @@ Hello world
 
 ## Credits
 
+* [Grains: Fine-grained Object Containers](https://sandstorm.io/images/how-it-works.png)
 * [LXC vs Docker](https://www.flockport.com/wp-content/uploads/2014/08/lxc-vs-docker5.png)
 * [Virtualization diagram](https://www.docker.com/sites/default/files/what-is-docker-diagram.png)
 * [Docker diagram](https://www.docker.com/sites/default/files/what-is-vm-diagram.png)
