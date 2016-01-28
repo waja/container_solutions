@@ -216,6 +216,31 @@ Hello world
 * The more reasonable usage of container can you made, the more is TCO reducing
 
 ---
+= data-x='14200' data-y='2000' id='docker12'
+## [Docker Ecosystem](https://www.mindmeister.com/de/389671722/docker-ecosystem)
+
+* [Docker Toolbox](https://www.docker.com/products/docker-toolbox)
+  - [Docker Compose](https://docs.docker.com/compose/) - define and run multi-container Docker applications
+  - [Docker Machine](https://docs.docker.com/machine/) - provisioning hosts and installs [Docker Engine](https://www.docker.com/products/docker-engine)
+  - [Docker Kitematic](https://docs.docker.com/kitematic/) - Docker GUI for Mac OS X and Windows
+  - [Docker Engine](https://docs.docker.com/) - creates and runs Docker containers
+  - [Docker Tutum](https://www.docker.com/products/tutum) - SaaS for deploying and managing Docker applications
+  - [Docker Hub](https://docs.docker.com/docker-hub/) - SaaS registry service
+     - [Docker Registry](https://docs.docker.com/registry/) - stores and distribute Docker images
+  - [Docker Swarm](https://docs.docker.com/swarm/) - transparently scale from one to multiple Docker hosts
+
+---
+= data-x='16400' data-y='2000' id='docker13'
+## [Docker Ecosystem](https://www.mindmeister.com/de/389671722/docker-ecosystem)
+
+* [Kubernetes](http://kubernetes.io/gettingstarted/) - deployment, scaling, and operations of application containers across clusters
+* [Mesosphere](https://mesosphere.com/learn/) - „Data Center Operating System“
+* [OpenStack](http://www.openstack.org/software/) - [Docker Driver](https://wiki.openstack.org/wiki/Docker)
+* [Shipyard](https://shipyard-project.com/walkthrough/) - manage Docker resources including containers, images, private registries and more
+* [Panamax](http://panamax.io/#about-panamax) - containerized app creator with an open-source app marketplace
+* [Drone](https://drone.io/) - CI platform built on Docker
+
+---
 = data-x='1000' data-y='4000' id='credits'
 
 ## Credits
@@ -228,6 +253,7 @@ Hello world
 * [Docker - Layered Filesystems Diagram] (https://www.docker.com/sites/default/files/products/what_is_layered_filesystems_sm.png)
 * [Understanding the key differences between LXC and Docker](https://www.flockport.com/lxc-vs-docker/)
 * [Operating System Containers vs. Application Containers](https://blog.risingstack.com/operating-system-containers-vs-application-containers/)
+* [Container auf großer Fahrt: Das Docker-Ökosystem](http://www.crisp-research.com/container-auf-groser-fahrt-das-docker-okosystem/)
 
 ---
 = data-x='-3000' data-y='1000' data-scale='4' id='slides'
