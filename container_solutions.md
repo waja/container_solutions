@@ -208,7 +208,18 @@ Hello world
 * You need to push the images into a Registry and deploy them (automatically)
 
 ---
-= data-x='12000' data-y='2000' id='docker11'
+= data-x="12000" data-y='2000' id='docker11'
+##  Docker - Image considerations
+
+* In bigger environments, on scale image size is getting an issue
+  * Chaining commands
+  * Remove intermediate and temporary file (e.g. caches)
+  * Use slim base images and install only necessary packages
+* Least likely changes at top to benefit from cache
+* [imagelayers.io](imagelayers.io)
+
+---
+= data-x='14200' data-y='2000' id='docker12'
 ## Docker - Things are going to be very different in production
 
 * Completely different infrastructure and deployment methods needed
@@ -216,7 +227,7 @@ Hello world
 * The more reasonable usage of container can you made, the more is TCO reducing
 
 ---
-= data-x='14200' data-y='2000' id='docker12'
+= data-x='16400' data-y='2000' id='docker13'
 ## [Docker Ecosystem](https://www.mindmeister.com/de/389671722/docker-ecosystem)
 
 * [Docker Toolbox](https://www.docker.com/products/docker-toolbox)
@@ -230,7 +241,7 @@ Hello world
   - [Docker Swarm](https://docs.docker.com/swarm/) - transparently scale from one to multiple Docker hosts
 
 ---
-= data-x='16400' data-y='2000' id='docker13'
+= data-x='18600' data-y='2000' id='docker14'
 ## [Docker Ecosystem](https://www.mindmeister.com/de/389671722/docker-ecosystem)
 
 * [Kubernetes](http://kubernetes.io/gettingstarted/) - deployment, scaling, and operations of application containers across clusters
@@ -241,7 +252,7 @@ Hello world
 * [Drone](https://drone.io/) - CI platform built on Docker
 
 ---
-= data-x='18600' data-y='2000' id='docker14'
+= data-x='20800' data-y='2000' id='docker15'
 ## Docker - Video Tutorials
 
 * [Introduction into Docker](https://fast.wistia.net/embed/iframe/1ok76kleuw)
