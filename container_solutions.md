@@ -111,9 +111,9 @@ Docker has compared to LXC
 
 ---
 = data-x='0' data-y='2000' id='docker1'
-## Virtual machines vs. Docker
+## VM vs. Docker vs. LXC
 
-<img width="100%" src="images/virt_vs_docker.png" alt="Virtual Machines vs Docker">
+<img width="100%" src="http://3.bp.blogspot.com/-H-KREYlGs0U/VmOmNrFDvTI/AAAAAAAAAYs/lj1AY14JEGo/s1600/image_1.png" alt="Virtual Machines vs Docker">
 
 ---
 = data-x='1200' data-y='2000' id='docker2'
@@ -255,7 +255,7 @@ Hello world
 * [Grains: Fine-grained Object Containers](https://sandstorm.io/images/how-it-works.png)
 * [LXC vs Docker](https://www.flockport.com/wp-content/uploads/2014/08/lxc-vs-docker5.png)
 * [Virtualization diagram](https://www.docker.com/sites/default/files/what-is-docker-diagram.png)
-* [Docker diagram](https://www.docker.com/sites/default/files/what-is-vm-diagram.png)
+* [VM vs. Docker vs. LXC](http://3.bp.blogspot.com/-H-KREYlGs0U/VmOmNrFDvTI/AAAAAAAAAYs/lj1AY14JEGo/s1600/image_1.png)
 * [Docker architecture](https://docs.docker.com/engine/article-img/architecture.svg)
 * [Docker - Layered Filesystems Diagram] (https://www.docker.com/sites/default/files/products/what_is_layered_filesystems_sm.png)
 * [Understanding the key differences between LXC and Docker](https://www.flockport.com/lxc-vs-docker/)
