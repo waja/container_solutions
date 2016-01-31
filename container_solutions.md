@@ -219,7 +219,7 @@ Hello world
 * [imagelayers.io](imagelayers.io)
 
 ---
-= data-x='14200' data-y='2000' id='docker12'
+= data-x='13200' data-y='2000' id='docker12'
 ## Docker - Things are going to be very different in production
 
 * Completely different infrastructure and deployment methods needed
@@ -227,7 +227,7 @@ Hello world
 * The more reasonable usage of container can you made, the more is TCO reducing
 
 ---
-= data-x='16400' data-y='2000' id='docker13'
+= data-x='14400' data-y='2000' id='docker13'
 ## [Docker Ecosystem](https://www.mindmeister.com/de/389671722/docker-ecosystem)
 
 * [Docker Toolbox](https://www.docker.com/products/docker-toolbox)
@@ -241,7 +241,7 @@ Hello world
   - [Docker Swarm](https://docs.docker.com/swarm/) - transparently scale from one to multiple Docker hosts
 
 ---
-= data-x='18600' data-y='2000' id='docker14'
+= data-x='15600' data-y='2000' id='docker14'
 ## [Docker Ecosystem](https://www.mindmeister.com/de/389671722/docker-ecosystem)
 
 * [Kubernetes](http://kubernetes.io/gettingstarted/) - deployment, scaling, and operations of application containers across clusters
@@ -252,7 +252,18 @@ Hello world
 * [Drone](https://drone.io/) - CI platform built on Docker
 
 ---
-= data-x='20800' data-y='2000' id='docker15'
+= data-x='16800' data-y='2000' id='docker15'
+## Docker - Windows
+
+* [Windows 2016 container support](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/containers_welcome) - [docker](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/manage_docker)
+* [Running Docker Containers On Windows Server 2016 (Quick Start Guide)](http://ashleypoole.co.uk/2016/docker-containers-windows-server-2016-guide/)
+
+<img style="position: relative; left:50px;" width="70%" src="http://assets.ashleypoole.co.uk/img/2016/01/docker-version.png" alt="Windows - docker version">
+
+<img style="position: relative; left:50px;" width="70%" src="http://assets.ashleypoole.co.uk/img/2016/01/docker-images.png" alt="Windows - docker images">
+
+---
+= data-x='18000' data-y='2000' id='docker16'
 ## Docker - Video Tutorials
 
 * [Introduction into Docker](https://fast.wistia.net/embed/iframe/1ok76kleuw)
@@ -269,6 +280,8 @@ Hello world
 * [VM vs. Docker vs. LXC](http://3.bp.blogspot.com/-H-KREYlGs0U/VmOmNrFDvTI/AAAAAAAAAYs/lj1AY14JEGo/s1600/image_1.png)
 * [Docker architecture](https://docs.docker.com/engine/article-img/architecture.svg)
 * [Docker - Layered Filesystems Diagram] (https://www.docker.com/sites/default/files/products/what_is_layered_filesystems_sm.png)
+* [Windows - docker version](http://assets.ashleypoole.co.uk/img/2016/01/docker-version.png)
+* [Windows - docker images](http://assets.ashleypoole.co.uk/img/2016/01/docker-images.pnghttp://assets.ashleypoole.co.uk/img/2016/01/docker-images.png)
 * [Understanding the key differences between LXC and Docker](https://www.flockport.com/lxc-vs-docker/)
 * [Operating System Containers vs. Application Containers](https://blog.risingstack.com/operating-system-containers-vs-application-containers/)
 * [Container auf großer Fahrt: Das Docker-Ökosystem](http://www.crisp-research.com/container-auf-groser-fahrt-das-docker-okosystem/)
