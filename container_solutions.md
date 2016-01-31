@@ -25,6 +25,7 @@ title: Container Solutions
 * [(BSD) jails](https://en.wikipedia.org/wiki/FreeBSD_jail)
   * sandboxed, own IP ect.
 * [(Solaris) zones](https://en.wikipedia.org/wiki/Solaris_Containers)
+* [IBM AIX Workload Partitions](https://en.wikipedia.org/wiki/Workload_Partitions)
 
 ---
 = data-x='2400' id='linux_separation1'
@@ -45,6 +46,7 @@ title: Container Solutions
   * [Docker](https://en.wikipedia.org/wiki/Docker_(software))
   * [rkt](https://coreos.com/rkt)
   * [runc](https://runc.io/)
+  * [Warden](https://blog.pivotal.io/pivotal-cloud-foundry/features/cloud-foundry-container-technology-a-garden-overview) by [Cloudfoundry](https://docs.cloudfoundry.org/concepts/architecture/warden.html)
   * [Unshare](http://man7.org/linux/man-pages/man1/unshare.1.html)
   * [Nspawn](http://www.freedesktop.org/software/systemd/man/systemd-nspawn.html)
 
