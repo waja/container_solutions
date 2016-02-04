@@ -272,6 +272,39 @@ Hello world
 * [Docker Fundamentals](https://fast.wistia.net/embed/iframe/u3w34ozv6x)
 
 ---
+= data-x='0' data-y='-2000' id='beyonddocker1'
+## Going Beyond
+
+---
+= data-x='1200' data-y='-2000' id='beyonddocker2'
+## Rise of the Datacenter OS - Apache [Mesos](https://en.wikipedia.org/wiki/Apache_Mesos)
+
+* ["provides efficient resource isolation and sharing across distributed applications, or frameworks"](https://engineering.twitter.com/opensource/projects/mesos)
+
+<img style="position: relative; left:75px;" width="80%" src="http://3.bp.blogspot.com/-S7G_w9EBCKw/VmOl-xkgkfI/AAAAAAAAAYk/v5Zw2O4V3MA/s1600/image_0.png" alt="Singe Linux Machine vs. Mesos Cluster">
+
+---
+= data-x='2400' data-y='-2000' id='beyonddocker3'
+## Rise of the Datacenter OS - Apache [Mesos](https://en.wikipedia.org/wiki/Apache_Mesos)
+
+* End of static (resource) partitioning
+* Mesosphere [DCOS](https://mesosphere.com/learn/#learn-services) – A Mesos-based Operating System
+  * [Package management](https://docs.mesosphere.com/administration/universe/)
+  * [Command line](https://docs.mesosphere.com/administration/introcli/)
+  * [Graphic interface](https://docs.mesosphere.com/administration/webinterface/)
+
+---
+= data-x='3600' data-y='-2000' id='beyonddocker4'
+## Docker meets Mesos
+
+* Solution for Docker is based on [Marathon](https://mesosphere.github.io/marathon) and [Chronos](https://mesos.github.io/chronos)
+  * Marathon - long-running services
+  * Chronos - batch scheduling (distributed cron jobs)
+* [Docker Containerizer](http://mesos.apache.org/documentation/latest/docker-containerizer/)
+* [Running Docker Containers on Marathon](https://mesosphere.github.io/marathon/docs/native-docker.html)
+* [Deploying A Web App Using Docker](https://open.mesosphere.com/advanced-course/deploying-a-web-app-using-docker/)
+
+---
 = data-x='1000' data-y='4000' id='credits'
 
 ## Credits
@@ -282,11 +315,13 @@ Hello world
 * [VM vs. Docker vs. LXC](http://3.bp.blogspot.com/-H-KREYlGs0U/VmOmNrFDvTI/AAAAAAAAAYs/lj1AY14JEGo/s1600/image_1.png)
 * [Docker architecture](https://docs.docker.com/engine/article-img/architecture.svg)
 * [Docker - Layered Filesystems Diagram] (https://www.docker.com/sites/default/files/products/what_is_layered_filesystems_sm.png)
+* [Singe Linux Machine vs. Mesos Cluster](http://3.bp.blogspot.com/-S7G_w9EBCKw/VmOl-xkgkfI/AAAAAAAAAYk/v5Zw2O4V3MA/s1600/image_0.png)
 * [Windows - docker version](http://assets.ashleypoole.co.uk/img/2016/01/docker-version.png)
 * [Windows - docker images](http://assets.ashleypoole.co.uk/img/2016/01/docker-images.pnghttp://assets.ashleypoole.co.uk/img/2016/01/docker-images.png)
 * [Understanding the key differences between LXC and Docker](https://www.flockport.com/lxc-vs-docker/)
 * [Operating System Containers vs. Application Containers](https://blog.risingstack.com/operating-system-containers-vs-application-containers/)
 * [Container auf großer Fahrt: Das Docker-Ökosystem](http://www.crisp-research.com/container-auf-groser-fahrt-das-docker-okosystem/)
+* [Apache Mesos and the Rise of the Datacenter OS](http://sysadvent.blogspot.de/2015/12/day-6-apache-mesos-and-rise-of.html)
 
 ---
 = data-x='-3000' data-y='1000' data-scale='4' id='slides'
