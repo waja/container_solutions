@@ -89,7 +89,7 @@ title: Container Solutions
 * Storage is a simple bind mount, not layered by default
 
 ### Docker
-* No init and not muliple processes (can be worked around with [supervisord](https://docs.docker.com/engine/articles/using_supervisord/))
+* No init and not muliple processes (can be worked around with [supervisord](https://docs.docker.com/engine/articles/using_supervisord/)/[runit](https://en.wikipedia.org/wiki/Runit))
 * Meant for single application
 * Deployment, networking, storage and orchestration via Docker toolstack
 * Uses FS layers and disables storage persistence, but has [volumes](https://docs.docker.com/engine/userguide/dockervolumes/)
