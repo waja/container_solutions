@@ -44,7 +44,7 @@ title: Container Solutions
 * For example used by
   * [LXC](https://en.wikipedia.org/wiki/LXC)
   * [Docker](https://en.wikipedia.org/wiki/Docker_(software))
-  * [rkt](https://coreos.com/rkt)
+  * [rkt](https://coreos.com/rkt) [1.0](https://coreos.com/blog/rkt-hits-1.0.html)
   * [runc](https://runc.io/)
   * [Warden](https://blog.pivotal.io/pivotal-cloud-foundry/features/cloud-foundry-container-technology-a-garden-overview) by [Cloudfoundry](https://docs.cloudfoundry.org/concepts/architecture/warden.html)
   * [Unshare](http://man7.org/linux/man-pages/man1/unshare.1.html)
