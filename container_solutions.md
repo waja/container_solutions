@@ -204,9 +204,9 @@ Hello world
 = data-x='10800' data-y='2000' id='docker10'
 ## Docker - Automate image creation
 
-* You need to have you images creation scripts (Dockerfiles) published
+* You need to have you images creation scripts (Dockerfiles) [published](https://github.com/Cyconet)
 * You need to build environments (infrastuture) to create you images from Dockerfiles
-  * Might be catched up by CI (autobuild on commit and/or regularly)
+  * Might be [catched](https://hub.docker.com/r/waja/) up by CI (autobuild on commit and/or regularly)
 * You need to push the images into a Registry and deploy them (automatically)
 
 ---
