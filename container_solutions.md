@@ -192,6 +192,14 @@ Hello world
 
 ---
 = data-x='9600' data-y='2000' id='docker9'
+## Docker - [storage driver](https://docs.docker.com/engine/userguide/storagedriver/selectadriver/)
+
+* [Pluggable driver architecture](https://docs.docker.com/engine/userguide/storagedriver/selectadriver/#a-pluggable-storage-driver-architecture)
+
+<img style="position: relative; left:25px;" width="90%" src="https://docs.docker.com/engine/userguide/storagedriver/images/driver-pros-cons.png" alt="Singe Linux Machine vs. Mesos Cluster">
+
+---
+= data-x='10800' data-y='2000' id='docker10'
 ## Docker - Updating your OS (packages)
 
 * You can't use your distribution toolstack to update your software in Docker containers (or images)
@@ -201,7 +209,7 @@ Hello world
   * Use well maintained (and thus updated) images, but depend on others
 
 ---
-= data-x='10800' data-y='2000' id='docker10'
+= data-x='12000' data-y='2000' id='docker11'
 ## Docker - Automate image creation
 
 * You need to have you images creation scripts (Dockerfiles) [published](https://github.com/Cyconet)
@@ -210,7 +218,7 @@ Hello world
 * You need to push the images into a Registry and deploy them (automatically)
 
 ---
-= data-x="12000" data-y='2000' id='docker11'
+= data-x="13200" data-y='2000' id='docker12'
 ##  Docker - Image considerations
 
 * In bigger environments, on scale image size is getting an issue
@@ -221,15 +229,15 @@ Hello world
 * [imagelayers.io](imagelayers.io)
 
 ---
-= data-x='13200' data-y='2000' id='docker12'
+= data-x='14400' data-y='2000' id='docker13'
 ## Docker - Things are going to be very different in production
 
 * Completely different infrastructure and deployment methods needed
 * May raise [TCO](https://en.wikipedia.org/wiki/Total_cost_of_ownership) depending on the homogeny of your environments
-* The more reasonable usage of container can you made, the more is TCO reducing
+* The more reasonable usage of container can you made, the more TCO is reducing
 
 ---
-= data-x='14400' data-y='2000' id='docker13'
+= data-x='15600' data-y='2000' id='docker14'
 ## [Docker Ecosystem](https://www.mindmeister.com/de/389671722/docker-ecosystem)
 
 * [Docker Toolbox](https://www.docker.com/products/docker-toolbox)
@@ -243,7 +251,7 @@ Hello world
   - [Docker Swarm](https://docs.docker.com/swarm/) - transparently scale from one to multiple Docker hosts
 
 ---
-= data-x='15600' data-y='2000' id='docker14'
+= data-x='16800' data-y='2000' id='docker15'
 ## [Docker Ecosystem](https://www.mindmeister.com/de/389671722/docker-ecosystem)
 
 * [Kubernetes](http://kubernetes.io/gettingstarted/) - deployment, scaling, and operations of application containers across clusters
@@ -254,7 +262,7 @@ Hello world
 * [Drone](https://drone.io/) - CI platform built on Docker
 
 ---
-= data-x='16800' data-y='2000' id='docker15'
+= data-x='18000' data-y='2000' id='docker16'
 ## Docker - Windows
 
 * [Windows 2016 container support](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/containers_welcome) - [docker](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/manage_docker)
@@ -265,7 +273,7 @@ Hello world
 <img style="position: relative; left:50px;" width="70%" src="http://assets.ashleypoole.co.uk/img/2016/01/docker-images.png" alt="Windows - docker images">
 
 ---
-= data-x='18000' data-y='2000' id='docker16'
+= data-x='19200' data-y='2000' id='docker17'
 ## Docker - Video Tutorials
 
 * [Introduction into Docker](https://fast.wistia.net/embed/iframe/1ok76kleuw)
@@ -315,6 +323,7 @@ Hello world
 * [VM vs. Docker vs. LXC](http://3.bp.blogspot.com/-H-KREYlGs0U/VmOmNrFDvTI/AAAAAAAAAYs/lj1AY14JEGo/s1600/image_1.png)
 * [Docker architecture](https://docs.docker.com/engine/article-img/architecture.svg)
 * [Docker - Layered Filesystems Diagram] (https://www.docker.com/sites/default/files/products/what_is_layered_filesystems_sm.png)
+* [Docker - Storage Driver - Pros and Cons] (https://docs.docker.com/engine/userguide/storagedriver/images/driver-pros-cons.png)
 * [Singe Linux Machine vs. Mesos Cluster](http://3.bp.blogspot.com/-S7G_w9EBCKw/VmOl-xkgkfI/AAAAAAAAAYk/v5Zw2O4V3MA/s1600/image_0.png)
 * [Windows - docker version](http://assets.ashleypoole.co.uk/img/2016/01/docker-version.png)
 * [Windows - docker images](http://assets.ashleypoole.co.uk/img/2016/01/docker-images.pnghttp://assets.ashleypoole.co.uk/img/2016/01/docker-images.png)
