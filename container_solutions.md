@@ -239,6 +239,17 @@ Hello world
 
 ---
 = data-x='15600' data-y='2000' id='docker14'
+## Docker - Things you wanna know
+
+* You need to housekeep your container and images
+  * [Keeping a clean docker environment](http://www.carlboettiger.info/2014/08/29/docker-notes.html#keeping-a-clean-docker-environment)
+  * [Docker Cleanup Commands](https://www.calazan.com/docker-cleanup-commands/)
+  * [Shellscript to delete orphaned docker volumes](https://github.com/chadoe/docker-cleanup-volumes)
+* Running in [User Namespaces](https://raesene.github.io/blog/2016/02/04/Docker-User-Namespaces/)
+  * (Docker-)Containers doesn't need to be run as root
+
+---
+= data-x='14800' data-y='2000' id='docker15'
 ## [Docker Ecosystem](https://www.mindmeister.com/de/389671722/docker-ecosystem)
 
 * [Docker Toolbox](https://www.docker.com/products/docker-toolbox)
@@ -252,7 +263,7 @@ Hello world
   - [Docker Swarm](https://docs.docker.com/swarm/) - transparently scale from one to multiple Docker hosts
 
 ---
-= data-x='16800' data-y='2000' id='docker15'
+= data-x='18000' data-y='2000' id='docker16'
 ## [Docker Ecosystem](https://www.mindmeister.com/de/389671722/docker-ecosystem)
 
 * [Kubernetes](http://kubernetes.io/gettingstarted/) - deployment, scaling, and operations of application containers across clusters
@@ -263,7 +274,7 @@ Hello world
 * [Drone](https://drone.io/) - CI platform built on Docker
 
 ---
-= data-x='18000' data-y='2000' id='docker16'
+= data-x='19200' data-y='2000' id='docker17'
 ## Docker - Windows
 
 * [Windows 2016 container support](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/containers_welcome) - [docker](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/manage_docker)
@@ -274,7 +285,7 @@ Hello world
 <img style="position: relative; left:50px;" width="70%" src="http://assets.ashleypoole.co.uk/img/2016/01/docker-images.png" alt="Windows - docker images">
 
 ---
-= data-x='19200' data-y='2000' id='docker17'
+= data-x='20400' data-y='2000' id='docker18'
 ## Docker - Video Tutorials
 
 * [Introduction into Docker](https://fast.wistia.net/embed/iframe/1ok76kleuw)
