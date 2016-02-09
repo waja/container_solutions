@@ -4,7 +4,7 @@ title: Container Solutions
 ---
 = data-x='-3000' data-y='-2000' data-scale='4' id='title'
 ## Container Solutions
-## <div style="font-size:small;">From chroot to Rocket and Sandstorm.io</div>
+## <div style="font-size:small;">From chroot to rkt, Sandstorm.io and even Mesos</div>
 ### Jan Wagner <waja@cyconet.org>
 
 <br>
