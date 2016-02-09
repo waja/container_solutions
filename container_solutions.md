@@ -215,6 +215,7 @@ Hello world
 * You need to have you images creation scripts (Dockerfiles) [published](https://github.com/Cyconet)
 * You need to build environments (infrastuture) to create you images from Dockerfiles
   * Might be [catched](https://hub.docker.com/r/waja/) up by CI (autobuild on commit and/or regularly)
+  * [Testing](https://travis-ci.org/Cyconet/) your images
 * You need to push the images into a Registry and deploy them (automatically)
 
 ---
