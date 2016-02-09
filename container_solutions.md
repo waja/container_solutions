@@ -60,7 +60,7 @@ title: Container Solutions
 * Lightweight virtualized (Linux) OS environments
 
 ---
-= data-x='3600' data-y='1000' id='containers3'
+= data-x='2400' data-y='1000' id='containers3'
 ## [Docker](https://www.docker.com/what-docker)
 
 * [Based](https://docs.docker.com/engine/introduction/understanding-docker/#the-underlying-technology) on [Linux Containers](#containers1)
@@ -69,7 +69,7 @@ title: Container Solutions
 * Goal: package and deliver an [application](https://www.docker.com/what-docker)
 
 ---
-= data-x='4800' data-y='1000' id='containers4'
+= data-x='3600' data-y='1000' id='containers4'
 ## [sandstorm.io](https://sandstorm.io/features)
 
 * Essentially [based](https://docs.sandstorm.io/en/latest/using/how-it-works/) on [Linux Containers](#containers1)
@@ -249,7 +249,7 @@ Hello world
   * (Docker-)Containers doesn't need to be run as root
 
 ---
-= data-x='14800' data-y='2000' id='docker15'
+= data-x='16800' data-y='2000' id='docker15'
 ## [Docker Ecosystem](https://www.mindmeister.com/de/389671722/docker-ecosystem)
 
 * [Docker Toolbox](https://www.docker.com/products/docker-toolbox)
@@ -336,6 +336,12 @@ Hello world
 * [Docker architecture](https://docs.docker.com/engine/article-img/architecture.svg)
 * [Docker - Layered Filesystems Diagram] (https://www.docker.com/sites/default/files/products/what_is_layered_filesystems_sm.png)
 * [Docker - Storage Driver - Pros and Cons] (https://docs.docker.com/engine/userguide/storagedriver/images/driver-pros-cons.png)
+
+---
+= data-x='1000' data-y='4000' id='credits'
+
+## Credits
+
 * [Singe Linux Machine vs. Mesos Cluster](http://3.bp.blogspot.com/-S7G_w9EBCKw/VmOl-xkgkfI/AAAAAAAAAYk/v5Zw2O4V3MA/s1600/image_0.png)
 * [Windows - docker version](http://assets.ashleypoole.co.uk/img/2016/01/docker-version.png)
 * [Windows - docker images](http://assets.ashleypoole.co.uk/img/2016/01/docker-images.pnghttp://assets.ashleypoole.co.uk/img/2016/01/docker-images.png)
