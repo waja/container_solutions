@@ -222,7 +222,7 @@ Hello world
 = data-x="13200" data-y='2000' id='docker12'
 ##  Docker - Image considerations
 
-* In bigger environments, on scale image size is getting an issue
+* In larger environments, on scale image size is getting an issue
   * Chaining commands
   * Remove intermediate and temporary file (e.g. caches)
   * Use slim base images and install only necessary packages
