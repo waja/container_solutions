@@ -8,7 +8,12 @@ title: Container Solutions
 ### Jan Wagner <waja@cyconet.org>
 
 <br>
-<!--<img style="position: relative; left:600px; top: 25px " src="images/image.png" alt="Just a not (yet) existing image.">-->
+
+---
+= data-x='0' data-y='-2000' data-scale='4' id='first'
+## First things first
+
+<a href="https://twitter.com/thegrugq/status/601974834138984448"><img style="position: relative; left:150px; text-decoration: none;" height="600" src="images/container_sec.jpg" alt="Containers will solve security!"></a>
 
 ---
 = data-x='0' id='chroot'
