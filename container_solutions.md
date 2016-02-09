@@ -330,6 +330,12 @@ Hello world
 * [Deploying A Web App Using Docker](https://open.mesosphere.com/advanced-course/deploying-a-web-app-using-docker/)
 
 ---
+= data-x='-3000' data-y='-3000' data-scale='4' id='againwhatlearned'
+## Conclusion
+
+<a href="https://twitter.com/sadserver/status/696793501833367552"><img style="position: relative; left:10px; text-decoration: none;" width="100%" src="images/container_shit.jpg" alt="Shit in, shit out!"></a>
+
+---
 = data-x='1000' data-y='4000' id='credits'
 
 ## Credits
