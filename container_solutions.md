@@ -81,7 +81,7 @@ title: Container Solutions
 * Result: Sandstorm package ([```.spk```-app](https://docs.sandstorm.io/en/latest/vagrant-spk/packaging-tutorial-meteor/#overview-of-sandstorm-packages))
 * Goal: package and deliver an [application](https://apps.sandstorm.io/)
 
-<img style="position: relative; left:200px;" height="350" src="https://sandstorm.io/images/how-it-works.png" alt="Grains: Fine-grained Object Containers">
+<img style="position: relative; left:250px;" height="375" src="https://sandstorm.io/images/how-it-works.png" alt="Grains: Fine-grained Object Containers">
 
 ---
 = data-x='10000' data-y='-1000' id='dockervslxc'
