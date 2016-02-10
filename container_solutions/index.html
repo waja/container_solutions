@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Container Solutions</title>
+    <link href="css/reset.css" rel="stylesheet" />
+    <meta name="author" content="Jan Wagner <waja@cyconet.org>">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="shortcut icon" href="css/favicon.png" />
+    <link rel="apple-touch-icon" href="css/apple-touch-icon.png" />
+    <!-- Code Prettifier: -->
+<link href="css/highlight.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+    <link href="css/style.css" rel="stylesheet" />
+
+  </head>
+
+  <body>
+  <div class="fallback-message">
+  <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+  <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+  </div>
+    <div id="impress">
+    <div class='step'  data-x='-3000' data-y='-2000' data-scale='4' id='title'>
+    
+<h2>Container Solutions</h2>
+
+<h2><div style="font-size:small;">From chroot to rkt, Sandstorm.io and even Mesos</div></h2>
+
+<h3>Jan Wagner <a href="mailto:waja@cyconet.org">waja@cyconet.org</a></h3>
+
+<p><br></p>
+</div>
+      <div class='step'  data-x='0' data-y='-2000' data-scale='4' id='first'>
+    
+<h2>First things first</h2>
+
+<p><a href="https://twitter.com/thegrugq/status/601974834138984448"><img style="position: relative; left:150px; text-decoration: none;" height="600" src="images/container_sec.jpg" alt="Containers will solve security!"></a></p>
+</div>
+      <div class='step'  data-x='0' id='chroot'>
+    
+<h2>Simple separation</h2>
+
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Chroot">chroot</a>
+
+<ul>
+<li>Mostly <a href="https://en.wikipedia.org/wiki/Chroot#Uses">used</a> for privilege separation and operations</li>
+<li>Restrict the view on the FS</li>
+</ul></li>
+</ul>
+</div>
+      <div class='step'  data-x='1200' id='real_separation'>
+    
+<h2>Beginning of real separation</h2>
+
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/FreeBSD_jail">(BSD) jails</a>
+
+<ul>
+<li>sandboxed, own IP ect.</li>
+</ul></li>
+<li><a href="https://en.wikipedia.org/wiki/Solaris_Containers">(Solaris) zones</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Workload_Partitions">IBM AIX Workload Partitions</a></li>
+</ul>
+</div>
+      <div class='step'  data-x='2400' id='linux_separation1'>
+    
+<h2>Early separations for Linux</h2>
+
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Linux-VServer">Linux-Vserver</a>
+
+<ul>
+<li>Founded <a href="http://linux-vserver.org/Frequently_Asked_Questions#Is_this_a_new_project.3F_When_was_it_started.3F">2001</a>, I <a href="http://log.cyconet.org/tag/vserver">started</a> using it 2006</li>
+<li>Beside other <a href="https://en.wikipedia.org/wiki/Linux-VServer#Disadvantages">disadvantages</a>, host kernel needs to be <a href="http://linux-vserver.org/Downloads#Kernel_Patches">patched</a></li>
+</ul></li>
+</ul>
+</div>
+      <div class='step'  data-x='0' data-y='1000' id='containers1'>
+    
+<h2>Linux Containers</h2>
+
+<ul>
+<li>Depends on <a href="https://en.wikipedia.org/wiki/Cgroups">cgroups</a> and <a href="https://en.wikipedia.org/wiki/Cgroups#Namespace_isolation">namespace isolation</a></li>
+<li>Fully integrated into vanilla Linux kernel</li>
+<li>For example used by
+
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/LXC">LXC</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Docker_(software)">Docker</a></li>
+<li><a href="https://coreos.com/rkt">rkt</a> <a href="https://coreos.com/blog/rkt-hits-1.0.html">1.0</a></li>
+<li><a href="https://runc.io/">runc</a></li>
+<li><a href="https://blog.pivotal.io/pivotal-cloud-foundry/features/cloud-foundry-container-technology-a-garden-overview">Warden</a> by <a href="https://docs.cloudfoundry.org/concepts/architecture/warden.html">Cloudfoundry</a></li>
+<li><a href="http://man7.org/linux/man-pages/man1/unshare.1.html">Unshare</a></li>
+<li><a href="http://www.freedesktop.org/software/systemd/man/systemd-nspawn.html">Nspawn</a></li>
+</ul></li>
+</ul>
+</div>
+      <div class='step'  data-x='1200' data-y='1000' id='containers2'>
+    
+<h2><a href="https://en.wikipedia.org/wiki/LXC">LXC</a></h2>
+
+<ul>
+<li>Based on <a href="#containers1">Linux Containers</a></li>
+<li><a href="https://github.com/lxc/lxc/tree/lxc_0_1_0">Founded</a> August 2008 on work by <a href="https://github.com/lxc/lxc/blob/lxc_0_1_0/AUTHORS">IBM</a></li>
+<li>Since LXC 1.0 <a href="https://linuxcontainers.org/lxc/security/">adequate isolation</a> can be <a href="https://www.stgraber.org/2014/01/01/lxc-1-0-security-features/">provided</a></li>
+<li>Lightweight virtualized (Linux) OS environments</li>
+</ul>
+</div>
+      <div class='step'  data-x='2400' data-y='1000' id='containers3'>
+    
+<h2><a href="https://www.docker.com/what-docker">Docker</a></h2>
+
+<ul>
+<li><a href="https://docs.docker.com/engine/introduction/understanding-docker/#the-underlying-technology">Based</a> on <a href="#containers1">Linux Containers</a></li>
+<li><a href="https://docs.docker.com/engine/introduction/understanding-docker/#union-file-systems">Uses</a> Union (layered) file systems</li>
+<li>Result: <a href="https://docs.docker.com/engine/introduction/understanding-docker/#container-format">Container format</a> - libcontainer, LXC (, maybe Jails and Zones)</li>
+<li>Goal: package and deliver an <a href="https://www.docker.com/what-docker">application</a></li>
+</ul>
+</div>
+      <div class='step'  data-x='3600' data-y='1000' id='containers4'>
+    
+<h2><a href="https://sandstorm.io/features">sandstorm.io</a></h2>
+
+<ul>
+<li>Essentially <a href="https://docs.sandstorm.io/en/latest/using/how-it-works/">based</a> on <a href="#containers1">Linux Containers</a></li>
+<li>Result: Sandstorm package (<a href="https://docs.sandstorm.io/en/latest/vagrant-spk/packaging-tutorial-meteor/#overview-of-sandstorm-packages"><code class='inline prettyprint'>.spk</code>-app</a>)</li>
+<li>Goal: package and deliver an <a href="https://apps.sandstorm.io/">application</a></li>
+</ul>
+
+<p><img style="position: relative; left:250px;" height="375" src="https://sandstorm.io/images/how-it-works.png" alt="Grains: Fine-grained Object Containers"></p>
+</div>
+      <div class='step'  data-x='10000' data-y='-1000' id='dockervslxc'>
+    
+<h2>Docker vs LXC</h2>
+
+<h3>LXC</h3>
+
+<ul>
+<li>Has init and multiple processes</li>
+<li>Single or multiple applications</li>
+<li>Normal OS environment and drop in replacement for VMs</li>
+<li>Storage is a simple bind mount, not layered by default</li>
+</ul>
+
+<h3>Docker</h3>
+
+<ul>
+<li>No init and not muliple processes (can be worked around with <a href="https://docs.docker.com/engine/articles/using_supervisord/">supervisord</a>/<a href="https://en.wikipedia.org/wiki/Runit">runit</a>)</li>
+<li>Meant for single application</li>
+<li>Deployment, networking, storage and orchestration via Docker toolstack</li>
+<li>Uses FS layers and disables storage persistence, but has <a href="https://docs.docker.com/engine/userguide/dockervolumes/">volumes</a></li>
+</ul>
+</div>
+      <div class='step'  data-x='11200' data-y='-1000' id='dockervslxc2'>
+    
+<h2>Docker vs LXC</h2>
+
+<p><img width="100%" src="https://www.flockport.com/wp-content/uploads/2014/08/lxc-vs-docker5.png" alt="LXC vs Docker"></p>
+</div>
+      <div class='step'  data-x='12400' data-y='-1000' id='dockervslxc3'>
+    
+<h2>Docker vs LXC</h2>
+
+<p>Docker has compared to LXC</p>
+
+<ul>
+<li>New behaviour in terms of network, storage and management</li>
+<li>Developer friendly model with the Dockerfile and commits</li>
+<li>No knowhow of OS needed <TODO></li>
+<li>Share and distribute applications via <a href="https://docs.docker.com/registry/">Registry</a></li>
+</ul>
+</div>
+      <div class='step'  data-x='0' data-y='2000' id='docker1'>
+    
+<h2>VM vs. Docker vs. LXC</h2>
+
+<p><img width="100%" src="http://3.bp.blogspot.com/-H-KREYlGs0U/VmOmNrFDvTI/AAAAAAAAAYs/lj1AY14JEGo/s1600/image_1.png" alt="Virtual Machines vs Docker"></p>
+</div>
+      <div class='step'  data-x='1200' data-y='2000' id='docker2'>
+    
+<h2>What might be the advantages of Docker</h2>
+
+<ul>
+<li>Using same environment for development and production</li>
+<li>Isolate applications (eg. perl5 and perl6) on the same system</li>
+<li>Rapid deployment in large scale (in combination with Docker <a href="https://docs.docker.com/registry/">Registry</a>)</li>
+</ul>
+</div>
+      <div class='step'  data-x='2400' data-y='2000' id='docker3'>
+    
+<h2>Docker architecture</h2>
+
+<p><img width="100%" src="https://docs.docker.com/engine/article-img/architecture.svg" alt="Docker architecture"></p>
+</div>
+      <div class='step'  data-x='3600' data-y='2000' id='docker4'>
+    
+<h2>Starting Docker</h2>
+
+<p><a href="https://asciinema.org/a/76zqng63200nt5f3esqnf7ag5" target="_blank"><img src="https://asciinema.org/a/76zqng63200nt5f3esqnf7ag5.png" height="500" alt="Starting nginx in Docker"/></a></p>
+</div>
+      <div class='step'  data-x='4800' data-y='2000' id='docker5'>
+    
+<h2><a href="https://gist.github.com/waja/fd40b69ac7db07093661#file-dockerfile">Dockerfiles</a></h2>
+
+<p><a href="https://asciinema.org/a/anwm2ve7vqc697adv553wr1rh" target="_blank"><img src="https://asciinema.org/a/anwm2ve7vqc697adv553wr1rh.png" height="500" alt="Building nginx container with Dockerfile"/></a></p>
+</div>
+      <div class='step'  data-x='6000' data-y='2000' id='docker6'>
+    
+<h2>Docker - user data?</h2>
+<pre><code class='prettyprint '>&#36; telnet localhost 80
+Trying 127.0.0.1...
+Connected to localhost.
+Escape character is '^]'.
+GET / HTTP/1.1
+HOST: localhost
+[...]
+<title\>Welcome to nginx on Debian!</title\>
+[...]
+</code></pre></div>
+      <div class='step'  data-x='7200' data-y='2000' id='docker7'>
+    
+<h2>Docker - <a href="https://docs.docker.com/engine/userguide/dockervolumes/">persistent data</a></h2>
+<pre><code class='prettyprint '>&#36; mkdir -p /tmp/nginx/ && \
+  echo "Hello world" > /tmp/nginx/index.html && \
+  docker run -d -p 80:80 -v /tmp/nginx/:/var/www/html \
+  debian/nginx nginx
+&#36; telnet localhost 80
+Trying 127.0.0.1...
+Connected to localhost.
+Escape character is '^]'.
+GET / HTTP/1.1
+HOST: localhost
+
+HTTP/1.1 200 OK
+[...]
+Hello world
+</code></pre></div>
+      <div class='step'  data-x='8400' data-y='2000' id='docker8'>
+    
+<h2>Docker - <a href="https://en.wikipedia.org/wiki/UnionFS#Other_implementations">Layered Filesystems</a></h2>
+
+<p><img src="https://www.docker.com/sites/default/files/products/what_is_layered_filesystems_sm.png" alt=""></p>
+
+<ul>
+<li><a href="https://docs.docker.com/engine/userguide/dockerimages/">Images</a> are series of stacked, read-only (FS) <a href="https://imagelayers.io/">layers</a></li>
+<li>Every (FS) change result into adding a new layer</li>
+<li>Top layer is a thin writable layer (makes the difference between <a href="https://docs.docker.com/engine/userguide/storagedriver/imagesandcontainers/">container and image</a>)</li>
+</ul>
+</div>
+      <div class='step'  data-x='9600' data-y='2000' id='docker9'>
+    
+<h2>Docker - <a href="https://docs.docker.com/engine/userguide/storagedriver/selectadriver/">storage driver</a></h2>
+
+<ul>
+<li><a href="https://docs.docker.com/engine/userguide/storagedriver/selectadriver/#a-pluggable-storage-driver-architecture">Pluggable driver architecture</a></li>
+</ul>
+
+<p><img style="position: relative; left:25px;" width="90%" src="https://docs.docker.com/engine/userguide/storagedriver/images/driver-pros-cons.png" alt="Singe Linux Machine vs. Mesos Cluster"></p>
+</div>
+      <div class='step'  data-x='10800' data-y='2000' id='docker10'>
+    
+<h2>Docker - Updating your OS (packages)</h2>
+
+<ul>
+<li>You can&#39;t use your distribution toolstack to update your software in Docker containers (or images)</li>
+<li>If you use less or unmaintained images, you may <a href="http://www.banyanops.com/blog/analyzing-docker-hub/">worry</a></li>
+<li>You need rebuild(ed) images from the bottom
+
+<ul>
+<li>Need to care yourself</li>
+<li>Use well maintained (and thus updated) images, but depend on others</li>
+</ul></li>
+</ul>
+</div>
+      <div class='step'  data-x='12000' data-y='2000' id='docker11'>
+    
+<h2>Docker - Automate image creation</h2>
+
+<ul>
+<li>You need to have you images creation scripts (Dockerfiles) <a href="https://github.com/Cyconet">published</a></li>
+<li>You need to build environments (infrastuture) to create you images from Dockerfiles
+
+<ul>
+<li>Might be <a href="https://hub.docker.com/r/waja/">catched</a> up by CI (autobuild on commit and/or regularly)</li>
+<li><a href="https://travis-ci.org/Cyconet/">Testing</a> your images</li>
+</ul></li>
+<li>You need to push the images into a Registry and deploy them (automatically)</li>
+</ul>
+</div>
+      <div class='step'  data-x="13200" data-y='2000' id='docker12'>
+    
+<h2>Docker - Image considerations</h2>
+
+<ul>
+<li>In larger environments, on scale image size is getting an issue
+
+<ul>
+<li>Chaining commands</li>
+<li>Remove intermediate and temporary file (e.g. caches)</li>
+<li>Use slim base images and install only necessary packages</li>
+</ul></li>
+<li>Least likely changes at top to benefit from cache</li>
+<li><a href="imagelayers.io">imagelayers.io</a></li>
+</ul>
+</div>
+      <div class='step'  data-x='14400' data-y='2000' id='docker13'>
+    
+<h2>Docker - Things are going to be very different in production</h2>
+
+<ul>
+<li>Completely different infrastructure and deployment methods needed</li>
+<li>May raise <a href="https://en.wikipedia.org/wiki/Total_cost_of_ownership">TCO</a> depending on the homogeny of your environments</li>
+<li>The more reasonable usage of container can you made, the more TCO is reducing</li>
+</ul>
+</div>
+      <div class='step'  data-x='15600' data-y='2000' id='docker14'>
+    
+<h2>Docker - Things you wanna know</h2>
+
+<ul>
+<li>You need to housekeep your container and images
+
+<ul>
+<li><a href="http://www.carlboettiger.info/2014/08/29/docker-notes.html#keeping-a-clean-docker-environment">Keeping a clean docker environment</a></li>
+<li><a href="https://www.calazan.com/docker-cleanup-commands/">Docker Cleanup Commands</a></li>
+<li><a href="https://github.com/chadoe/docker-cleanup-volumes">Shellscript to delete orphaned docker volumes</a></li>
+</ul></li>
+<li>Running in <a href="https://raesene.github.io/blog/2016/02/04/Docker-User-Namespaces/">User Namespaces</a>
+
+<ul>
+<li>(Docker-)Containers doesn&#39;t need to be run as root</li>
+</ul></li>
+</ul>
+</div>
+      <div class='step'  data-x='16800' data-y='2000' id='docker15'>
+    
+<h2><a href="https://www.mindmeister.com/de/389671722/docker-ecosystem">Docker Ecosystem</a></h2>
+
+<ul>
+<li><a href="https://www.docker.com/products/docker-toolbox">Docker Toolbox</a>
+
+<ul>
+<li><a href="https://docs.docker.com/compose/">Docker Compose</a> - define and run multi-container Docker applications</li>
+<li><a href="https://docs.docker.com/machine/">Docker Machine</a> - provisioning hosts and installs <a href="https://www.docker.com/products/docker-engine">Docker Engine</a></li>
+<li><a href="https://docs.docker.com/kitematic/">Docker Kitematic</a> - Docker GUI for Mac OS X and Windows</li>
+<li><a href="https://docs.docker.com/">Docker Engine</a> - creates and runs Docker containers</li>
+<li><a href="https://www.docker.com/products/tutum">Docker Tutum</a> - SaaS for deploying and managing Docker applications</li>
+<li><a href="https://docs.docker.com/docker-hub/">Docker Hub</a> - SaaS registry service
+
+<ul>
+<li><a href="https://docs.docker.com/registry/">Docker Registry</a> - stores and distribute Docker images</li>
+</ul></li>
+<li><a href="https://docs.docker.com/swarm/">Docker Swarm</a> - transparently scale from one to multiple Docker hosts</li>
+</ul></li>
+</ul>
+</div>
+      <div class='step'  data-x='18000' data-y='2000' id='docker16'>
+    
+<h2><a href="https://www.mindmeister.com/de/389671722/docker-ecosystem">Docker Ecosystem</a></h2>
+
+<ul>
+<li><a href="http://kubernetes.io/gettingstarted/">Kubernetes</a> - deployment, scaling, and operations of application containers across clusters</li>
+<li><a href="https://mesosphere.com/learn/">Mesosphere</a> - „Data Center Operating System“</li>
+<li><a href="http://www.openstack.org/software/">OpenStack</a> - <a href="https://wiki.openstack.org/wiki/Docker">Docker Driver</a></li>
+<li><a href="https://shipyard-project.com/walkthrough/">Shipyard</a> - manage Docker resources including containers, images, private registries and more</li>
+<li><a href="http://panamax.io/#about-panamax">Panamax</a> - containerized app creator with an open-source app marketplace</li>
+<li><a href="https://drone.io/">Drone</a> - CI platform built on Docker</li>
+</ul>
+</div>
+      <div class='step'  data-x='19200' data-y='2000' id='docker17'>
+    
+<h2>Docker - Windows</h2>
+
+<ul>
+<li><a href="https://msdn.microsoft.com/en-us/virtualization/windowscontainers/containers_welcome">Windows 2016 container support</a> - <a href="https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/manage_docker">docker</a></li>
+<li><a href="http://ashleypoole.co.uk/2016/docker-containers-windows-server-2016-guide/">Running Docker Containers On Windows Server 2016 (Quick Start Guide)</a></li>
+</ul>
+
+<p><img style="position: relative; left:50px;" width="70%" src="http://assets.ashleypoole.co.uk/img/2016/01/docker-version.png" alt="Windows - docker version"></p>
+
+<p><img style="position: relative; left:50px;" width="70%" src="http://assets.ashleypoole.co.uk/img/2016/01/docker-images.png" alt="Windows - docker images"></p>
+</div>
+      <div class='step'  data-x='20400' data-y='2000' id='docker18'>
+    
+<h2>Docker - Video Tutorials</h2>
+
+<ul>
+<li><a href="https://fast.wistia.net/embed/iframe/1ok76kleuw">Introduction into Docker</a></li>
+<li><a href="https://fast.wistia.net/embed/iframe/u3w34ozv6x">Docker Fundamentals</a></li>
+</ul>
+</div>
+      <div class='step'  data-x='0' data-y='-2000' id='beyonddocker1'>
+    
+<h2>Going Beyond</h2>
+</div>
+      <div class='step'  data-x='1200' data-y='-2000' id='beyonddocker2'>
+    
+<h2>Rise of the Datacenter OS - Apache <a href="https://en.wikipedia.org/wiki/Apache_Mesos">Mesos</a></h2>
+
+<ul>
+<li><a href="https://engineering.twitter.com/opensource/projects/mesos">&quot;provides efficient resource isolation and sharing across distributed applications, or frameworks&quot;</a></li>
+</ul>
+
+<p><img style="position: relative; left:75px;" width="80%" src="http://3.bp.blogspot.com/-S7G_w9EBCKw/VmOl-xkgkfI/AAAAAAAAAYk/v5Zw2O4V3MA/s1600/image_0.png" alt="Singe Linux Machine vs. Mesos Cluster"></p>
+</div>
+      <div class='step'  data-x='2400' data-y='-2000' id='beyonddocker3'>
+    
+<h2>Rise of the Datacenter OS - Apache <a href="https://en.wikipedia.org/wiki/Apache_Mesos">Mesos</a></h2>
+
+<ul>
+<li>End of static (resource) partitioning</li>
+<li>Mesosphere <a href="https://mesosphere.com/learn/#learn-services">DCOS</a> – A Mesos-based Operating System
+
+<ul>
+<li><a href="https://docs.mesosphere.com/administration/universe/">Package management</a></li>
+<li><a href="https://docs.mesosphere.com/administration/introcli/">Command line</a></li>
+<li><a href="https://docs.mesosphere.com/administration/webinterface/">Graphic interface</a></li>
+</ul></li>
+</ul>
+</div>
+      <div class='step'  data-x='3600' data-y='-2000' id='beyonddocker4'>
+    
+<h2>Docker meets Mesos</h2>
+
+<ul>
+<li>Solution for Docker is based on <a href="https://mesosphere.github.io/marathon">Marathon</a> and <a href="https://mesos.github.io/chronos">Chronos</a>
+
+<ul>
+<li>Marathon - long-running services</li>
+<li>Chronos - batch scheduling (distributed cron jobs)</li>
+</ul></li>
+<li><a href="http://mesos.apache.org/documentation/latest/docker-containerizer/">Docker Containerizer</a></li>
+<li><a href="https://mesosphere.github.io/marathon/docs/native-docker.html">Running Docker Containers on Marathon</a></li>
+<li><a href="https://open.mesosphere.com/advanced-course/deploying-a-web-app-using-docker/">Deploying A Web App Using Docker</a></li>
+</ul>
+</div>
+      <div class='step'  data-x='-3000' data-y='-3000' data-scale='4' id='againwhatlearned'>
+    
+<h2>Conclusion</h2>
+
+<p><a href="https://twitter.com/sadserver/status/696793501833367552"><img style="position: relative; left:10px; text-decoration: none;" width="100%" src="images/container_shit.jpg" alt="Shit in, shit out!"></a></p>
+</div>
+      <div class='step'  data-x='1000' data-y='4000' id='credits'>
+    
+<h2>Credits</h2>
+
+<ul>
+<li><a href="https://sandstorm.io/images/how-it-works.png">Grains: Fine-grained Object Containers</a></li>
+<li><a href="https://www.flockport.com/wp-content/uploads/2014/08/lxc-vs-docker5.png">LXC vs Docker</a></li>
+<li><a href="https://www.docker.com/sites/default/files/what-is-docker-diagram.png">Virtualization diagram</a></li>
+<li><a href="http://3.bp.blogspot.com/-H-KREYlGs0U/VmOmNrFDvTI/AAAAAAAAAYs/lj1AY14JEGo/s1600/image_1.png">VM vs. Docker vs. LXC</a></li>
+<li><a href="https://docs.docker.com/engine/article-img/architecture.svg">Docker architecture</a></li>
+<li><a href="https://www.docker.com/sites/default/files/products/what_is_layered_filesystems_sm.png">Docker - Layered Filesystems Diagram</a></li>
+<li><a href="https://docs.docker.com/engine/userguide/storagedriver/images/driver-pros-cons.png">Docker - Storage Driver - Pros and Cons</a></li>
+</ul>
+</div>
+      <div class='step'  data-x='1000' data-y='4000' id='credits'>
+    
+<h2>Credits</h2>
+
+<ul>
+<li><a href="http://3.bp.blogspot.com/-S7G_w9EBCKw/VmOl-xkgkfI/AAAAAAAAAYk/v5Zw2O4V3MA/s1600/image_0.png">Singe Linux Machine vs. Mesos Cluster</a></li>
+<li><a href="http://assets.ashleypoole.co.uk/img/2016/01/docker-version.png">Windows - docker version</a></li>
+<li><a href="http://assets.ashleypoole.co.uk/img/2016/01/docker-images.pnghttp://assets.ashleypoole.co.uk/img/2016/01/docker-images.png">Windows - docker images</a></li>
+<li><a href="https://www.flockport.com/lxc-vs-docker/">Understanding the key differences between LXC and Docker</a></li>
+<li><a href="https://blog.risingstack.com/operating-system-containers-vs-application-containers/">Operating System Containers vs. Application Containers</a></li>
+<li><a href="http://www.crisp-research.com/container-auf-groser-fahrt-das-docker-okosystem/">Container auf großer Fahrt: Das Docker-Ökosystem</a></li>
+<li><a href="http://sysadvent.blogspot.de/2015/12/day-6-apache-mesos-and-rise-of.html">Apache Mesos and the Rise of the Datacenter OS</a></li>
+</ul>
+</div>
+      <div class='step'  data-x='-3000' data-y='1000' data-scale='4' id='slides'>
+    
+<h2>Slides</h2>
+
+<ul>
+<li><a href="http://waja.github.io/container_solutions/container_solutions/">http://waja.github.io/container_solutions/container_solutions/</a></li>
+<li>License: <a href="https://creativecommons.org/licenses/by-sa/3.0/de/">CC-SA-3.0-DE</a></li>
+<li>Mail: Jan Wagner <a href="mailto:waja@cyconet.org">waja@cyconet.org</a></li>
+</ul>
+
+      </div>
+    <script src="js/impress.js"></script>
+    <script>impress().init();</script>
+  </body>
+</html>
+    
